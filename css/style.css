@@ -1,0 +1,174 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #091f36;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+    position: relative;
+}
+.titleBox{
+    background-color: #0f2862;
+    width: 1024px;
+    padding: 20px 15px;
+    position: fixed;
+}
+.logo{
+    color: white;
+    font-size: 2rem;
+}
+form{
+    margin-top: 10px;
+    height: 40px;
+}
+input{
+    height: 30px;
+    width: 50%;
+    padding: 0%;
+    text-align: center;
+    outline: none;
+}
+button{
+    height: 34px;
+    background-color: #4f5f76;
+    color: white;
+    margin-left: -5px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+.resPageBar{
+    height: 33px;
+    width: 1054px;
+    margin-top: 128px;
+    padding: 10px 0;
+    position: fixed;
+}
+.resPage{
+    float: right;
+    width: 90px;
+    color: #4f5f76;
+}
+.button_inline_pre-page{
+    float: left;
+}
+.button_inline_next-page{
+    float: right;
+}
+.loaderContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 5;
+}
+
+.loader{
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    left: 50%;
+    margin-left: -75px;
+    top: 40%;
+    border-radius: 50%;
+    border: 25px solid transparent;
+    border-top: 25px solid blue;
+    border-right: 25px solid blue;
+    border-bottom: 25px solid blue;
+    animation: animate 1s infinite linear;
+}
+@keyframes animate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.bookRes{
+    margin-top: 181px;
+    width: 1054px;
+    position: absolute;
+    z-index: -1;
+}
+.book{
+    margin-bottom: 10px;
+    height: 220px;
+    background-color: #00303F;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: 2px solid #4f5f76;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.title{
+    width: fit-content;
+    font-size: 2rem;
+    color: white;
+}
+.description{
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+.imgBox{
+    flex: 1;
+    text-align: center;
+    border-right: #4f5f76 1px solid;
+}
+
+.textBox{
+    flex: 2;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+.coverImg{
+    text-align: center;
+}
+.bookTitle{
+    text-align: center;
+}
+.titleBar{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.author{
+    margin: 5px;
+}
+.bookContainer{
+    width: 1054px;
+    margin-top: 138px;
+    padding: 10px 0px;
+    color: white;
+    position: absolute;
+    z-index: -1;
+}
+.bookDescription p{
+    margin: 5px 0;
+}
+.plot{
+    font-weight: 200;
+}
+.buttons{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.home{
+    margin: 0 10px;
+}
+.home i{
+    font-size: 1.5rem;
+}
+.moreInfo{
+    margin-left: auto;
+}
